@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <PackageId>SqlInjectionGuardToolKit</PackageId>
+    <Title>SqlInjectionGuardToolKit</Title>
+    <Version>1.0.0</Version>
+    <Authors>Nitesh chaurasiya</Authors>
+    <Company>Nitesh chaurasiya</Company>
+    <Product>SqlInjectionGuardToolKit</Product>
+    <PackageTags>Sql Injection Guard,ToolKit, Sql Injection , Sql , Injection</PackageTags>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageRequireLicenseAcceptance>False</PackageRequireLicenseAcceptance>
+    <Description>Lightweight SQL Injection validation &amp; sanitization helper &amp; Toolkit</Description>
+	
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="SqlInjectionValidatorTestApp\obj\Debug\**" />
+    <EmbeddedResource Remove="SqlInjectionValidatorTestApp\obj\Debug\**" />
+    <None Remove="SqlInjectionValidatorTestApp\obj\Debug\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+	  <FrameworkReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="2.3.9" />
+  </ItemGroup>
+
+</Project>
